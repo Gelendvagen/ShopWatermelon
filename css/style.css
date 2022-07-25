@@ -1,0 +1,117 @@
+*
+{
+	background-color:#F0FFF0;
+}
+
+body
+{
+	background-image:url("file:///C:/Users/angel/Desktop/HTML%20$%20CSS/%D0%90%D1%80%D0%B1%D1%83%D0%B7%D1%8B/img/bg.png");
+	background-position:left bottom;		/*начальное положение картинки*/
+	background-repeat:repeat-x;			/*повтор по горизонтали*/
+	background-size:10pt;
+	font-family:"Palatino Linotype";
+	font-size:14pt;
+}
+
+h1,
+h2,
+h3
+{
+	font-family:"Trebuchet MS";
+	font-size:22pt;
+	background:linear-gradient(to bottom, #BDECB6, rgba(14,83,3,0.3), #47A76A);
+}
+
+img
+{
+	border:1px solid black;
+	padding:10px;		/*внутренние отступы*/
+	margin:0 20px 10px 5px;			/*внешние отступы*/
+	height:270px;
+}
+
+p:first-letter		/*стиль первого символа в тексте*/
+{
+	font-family:"Georgia";
+	font-size:200%;
+	color:#006400;
+}
+
+.hor_menu ul
+{
+	list-style:none;
+	display:flex;
+	background:#F0FFF0;
+	padding-left:0;
+	font:14pt "Palatino Linotype";
+}
+
+.hor_menu a
+{
+	padding:1em;		/*Высота строки*/
+	display:block;
+	color:Black;
+	border-right:1px solid black;			/*Разделитель линиями*/
+	background:#CCFFCC;
+}
+
+.c1
+{
+	border:10px solid black;
+}
+
+.list-1
+{
+	list-style:none;
+	counter-reset:li;		/*сброс счетчика элементов li*/
+	font:14pt "Georgia";
+	padding:2pt;
+	text-shadow:0 1px 0 rgba(255,255,255,.5);		/*a - канал прозрачности (.5)*/
+	margin:1em 0 0 2em;
+}
+
+.list-1 a
+{
+	position:relative;
+	display:block;
+	padding:.4em 4em 4em 2em;
+	margin:.5em 4;
+	background-image:url("file:///C:/Users/angel/Desktop/HTML%20$%20CSS/%D0%90%D1%80%D0%B1%D1%83%D0%B7%D1%8B/img/fon.jpeg");
+	background-size:650px 70px;
+	background-repeat:no-repeat;
+	color:Black;
+	text-decoration:none;
+	border-radius:.3em;
+	transition:.3s ease-out;
+	font-weight:bold;
+}
+
+.list-1 a:hover
+{
+	background:#F0FFF0;
+} 
+
+.list-1 a:before		/*псевдоэлемент, который будет построен перед элементом a*/
+{
+	content:counter(li);
+	counter-increment:li;
+	position:absolute;		/*жесткая привязка дочернего элемента a:before к родит.элементу а*/
+	left:-1.3em;		/*левый верхний угол, координата х*/
+	top:50%;		/*левый верхний угол, координата y*/
+	border:.3em solid white;
+	margin-top:-1.3em;
+	background:#AFEEEE;
+	height:2em;
+	width:2em;
+	line-height:2em;
+	text-align:center;
+	font-weight:bold;
+	border-radius:2em;
+	transition:all .5s ease-out;
+	
+}
+
+.list-1 a:hover:before		/*стиль при наведении на ссылки списка для псевдоэлемента*/
+{
+	transform:rotate(360deg);
+}
