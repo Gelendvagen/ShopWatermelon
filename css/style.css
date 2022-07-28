@@ -5,7 +5,7 @@
 
 body
 {
-	background-image:url("file:///C:/Users/angel/Desktop/HTML%20$%20CSS/%D0%90%D1%80%D0%B1%D1%83%D0%B7%D1%8B/img/bg.png");
+	background-image:url("C:/Users/angel/Desktop/Front/watermelon/img/bg.png");
 	background-position:left bottom;		/*начальное положение картинки*/
 	background-repeat:repeat-x;			/*повтор по горизонтали*/
 	background-size:10pt;
@@ -76,7 +76,7 @@ p:first-letter		/*стиль первого символа в тексте*/
 	display:block;
 	padding:.4em 4em 4em 2em;
 	margin:.5em 4;
-	background-image:url("file:///C:/Users/angel/Desktop/HTML%20$%20CSS/%D0%90%D1%80%D0%B1%D1%83%D0%B7%D1%8B/img/fon.jpeg");
+	background-image:url("C:/Users/angel/Desktop/Front/watermelon/img/fon.jpeg");
 	background-size:650px 70px;
 	background-repeat:no-repeat;
 	color:Black;
